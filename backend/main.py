@@ -9,9 +9,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from fastapi.staticfiles import StaticFiles
 
-import geminimodel
-import qwenmodel
-import pdfInput
+from . import geminimodel
+from . import pdfInput
 
 
 app = FastAPI(title="Client Intelligence Report Generator")
